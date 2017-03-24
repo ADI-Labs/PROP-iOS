@@ -1,0 +1,6 @@
+framework module Pods_PROPTests {
+  umbrella header "Pods-PROPTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

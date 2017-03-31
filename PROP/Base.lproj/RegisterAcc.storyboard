@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kVl-Ef-iZv">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9Bd-3R-G2K">
+            <objects>
+                <navigationController id="kVl-Ef-iZv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kaC-dv-dIe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RKc-rN-jv1" kind="relationship" relationship="rootViewController" id="nC8-Ej-kSN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKi-yq-R5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="1406"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="c2d-P8-fQ5">
+            <objects>
+                <viewController id="RKc-rN-jv1" customClass="RegisterVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XYO-UV-fAP"/>
+                        <viewControllerLayoutGuide type="bottom" id="G93-Ny-0P8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bwc-eE-2hX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PROP-logo" translatesAutoresizingMaskIntoConstraints="NO" id="gJi-HA-TMN">
+                                <rect key="frame" x="52.5" y="74" width="216" height="104"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDX-P5-kRt">
+                                <rect key="frame" x="131.5" y="468" width="57" height="30"/>
+                                <state key="normal" title="Register"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="U5l-mT-eKS">
+                                <rect key="frame" x="26" y="195" width="268" height="230"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="17M-ca-fh6">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="42"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-Jw-Gbk">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="42"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-8i-pRC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="12"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                                        <color key="textColor" red="1" green="0.099629559872677631" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXo-lM-ggI">
+                                                        <rect key="frame" x="0.0" y="12" width="125" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GN6-43-rw4">
+                                                <rect key="frame" x="143" y="0.0" width="125" height="42"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csv-T1-3Kb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="12"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                                        <color key="textColor" red="1" green="0.099629559869999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pLM-Gj-HZk">
+                                                        <rect key="frame" x="0.0" y="12" width="125" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5Xe-3Z-9Dd">
+                                        <rect key="frame" x="0.0" y="47" width="268" height="183"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f5Q-MF-oc2">
+                                                <rect key="frame" x="0.0" y="0.0" width="268" height="42"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must be at least 4 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-u5-4Vc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                                        <color key="textColor" red="1" green="0.099629559869999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Nd-Jg-tEm">
+                                                        <rect key="frame" x="0.0" y="12" width="268" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="o8L-u5-4Vc" firstAttribute="leading" secondItem="6Nd-Jg-tEm" secondAttribute="leading" id="ad3-t3-YdC"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-Ee-EXa">
+                                                <rect key="frame" x="0.0" y="47" width="268" height="42"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Does Not Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDT-Rj-7iy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                                        <color key="textColor" red="1" green="0.099629559869999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQu-cc-fNp">
+                                                        <rect key="frame" x="0.0" y="12" width="268" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="YDT-Rj-7iy" firstAttribute="leading" secondItem="lQu-cc-fNp" secondAttribute="leading" id="0KN-Bh-QOU"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aLv-bi-1g5">
+                                                <rect key="frame" x="0.0" y="94" width="268" height="42"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must be at least 6 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjc-HV-WYT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                                        <color key="textColor" red="1" green="0.099629559869999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AiU-24-VuG">
+                                                        <rect key="frame" x="0.0" y="12" width="268" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Bjc-HV-WYT" firstAttribute="leading" secondItem="AiU-24-VuG" secondAttribute="leading" id="VrZ-dj-56B"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7hN-qw-Kec">
+                                                <rect key="frame" x="0.0" y="141" width="268" height="42"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Does Not Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-oL-tM7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                                        <color key="textColor" red="1" green="0.099629559869999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k1m-0b-bre">
+                                                        <rect key="frame" x="0.0" y="12" width="268" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="e6Q-oL-tM7" firstAttribute="leading" secondItem="k1m-0b-bre" secondAttribute="leading" id="aoy-jO-2gM"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6Nd-Jg-tEm" firstAttribute="width" secondItem="5Xe-3Z-9Dd" secondAttribute="width" id="8vb-m2-1Nh"/>
+                                            <constraint firstItem="lQu-cc-fNp" firstAttribute="width" secondItem="5Xe-3Z-9Dd" secondAttribute="width" id="MRq-ka-vDX"/>
+                                            <constraint firstItem="k1m-0b-bre" firstAttribute="width" secondItem="5Xe-3Z-9Dd" secondAttribute="width" id="mMY-gw-0CU"/>
+                                            <constraint firstItem="AiU-24-VuG" firstAttribute="width" secondItem="5Xe-3Z-9Dd" secondAttribute="width" id="zOk-xa-ZFJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Xe-3Z-9Dd" firstAttribute="width" secondItem="U5l-mT-eKS" secondAttribute="width" id="671-Qr-6s7"/>
+                                    <constraint firstItem="17M-ca-fh6" firstAttribute="width" secondItem="U5l-mT-eKS" secondAttribute="width" id="Zlu-2I-Tg8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U5l-mT-eKS" firstAttribute="top" secondItem="gJi-HA-TMN" secondAttribute="bottom" constant="17" id="76x-ue-Ibd"/>
+                            <constraint firstItem="gJi-HA-TMN" firstAttribute="centerX" secondItem="bwc-eE-2hX" secondAttribute="centerX" id="CvU-mR-hQ2"/>
+                            <constraint firstItem="U5l-mT-eKS" firstAttribute="leading" secondItem="bwc-eE-2hX" secondAttribute="leadingMargin" constant="10" id="Fgy-gd-68W"/>
+                            <constraint firstItem="EDX-P5-kRt" firstAttribute="top" secondItem="U5l-mT-eKS" secondAttribute="bottom" constant="43" id="Pj3-Fa-5Fq"/>
+                            <constraint firstItem="EDX-P5-kRt" firstAttribute="centerX" secondItem="bwc-eE-2hX" secondAttribute="centerX" id="X9o-cW-JYy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U5l-mT-eKS" secondAttribute="trailing" constant="10" id="ZJu-ZN-fbe"/>
+                            <constraint firstItem="gJi-HA-TMN" firstAttribute="top" secondItem="XYO-UV-fAP" secondAttribute="bottom" constant="10" id="dMH-cT-fuc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M09-EU-wfO">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="BOy-hB-x7u">
+                            <connections>
+                                <segue destination="9DN-mc-TyH" kind="unwind" unwindAction="unwindModalWithSegue:" id="BQU-f9-fsB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="confirmEmail" destination="lQu-cc-fNp" id="ncB-7V-Luc"/>
+                        <outlet property="confirmEmailError" destination="YDT-Rj-7iy" id="O9Q-sG-OKt"/>
+                        <outlet property="confirmPassword" destination="k1m-0b-bre" id="Xd3-kP-KKG"/>
+                        <outlet property="confirmPasswordError" destination="e6Q-oL-tM7" id="mmG-cI-adK"/>
+                        <outlet property="email" destination="6Nd-Jg-tEm" id="Wk5-7o-JLp"/>
+                        <outlet property="emailError" destination="o8L-u5-4Vc" id="FaF-0Y-P14"/>
+                        <outlet property="firstName" destination="nXo-lM-ggI" id="1J6-7K-3dI"/>
+                        <outlet property="firstNameError" destination="XBA-8i-pRC" id="nki-qc-4zx"/>
+                        <outlet property="lastName" destination="pLM-Gj-HZk" id="fpk-A2-rBT"/>
+                        <outlet property="lastNameError" destination="Csv-T1-3Kb" id="ehi-hd-xYc"/>
+                        <outlet property="password" destination="AiU-24-VuG" id="RKy-37-Uqo"/>
+                        <outlet property="passwordError" destination="Bjc-HV-WYT" id="5Q2-Ta-U4O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oH-1Y-Krj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9DN-mc-TyH" userLabel="Exit" sceneMemberID="exit"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" id="gfv-bu-4rK">
+                    <rect key="frame" x="0.0" y="0.0" width="268" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wn-yo-hEc">
+                            <rect key="frame" x="92" y="0.0" width="84.5" height="12"/>
+                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                            <color key="textColor" red="1" green="0.099629559869999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfz-hX-CyU">
+                            <rect key="frame" x="92" y="12" width="84.5" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8Wn-yo-hEc" firstAttribute="leading" secondItem="nfz-hX-CyU" secondAttribute="leading" id="Utm-3K-fBD"/>
+                    </constraints>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="1741.875" y="1405.9859154929577"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PROP-logo" width="216" height="104"/>
+    </resources>
+</document>

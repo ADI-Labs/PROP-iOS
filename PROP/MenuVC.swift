@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 
 class MenuVC: UIViewController {
 
@@ -17,6 +16,10 @@ class MenuVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func unwindModal(segue : UIStoryboardSegue) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

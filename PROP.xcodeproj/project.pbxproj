@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14D769211E8EE5E000E9786A /* ScanData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D769201E8EE5E000E9786A /* ScanData.storyboard */; };
+		14D769241E8EE65900E9786A /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D769231E8EE65900E9786A /* MenuVC.swift */; };
+		14D769261E8EEA6200E9786A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D769251E8EEA6200E9786A /* GoogleService-Info.plist */; };
 		16A90F6E27002253E958BBAC /* Pods_PROPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299E190BF08E895A437EF943 /* Pods_PROPTests.framework */; };
 		6C7CF2511E85B07C00C94DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF2501E85B07C00C94DF3 /* AppDelegate.swift */; };
 		6C7CF2561E85B07C00C94DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF2541E85B07C00C94DF3 /* Main.storyboard */; };
 		6C7CF2581E85B07C00C94DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF2571E85B07C00C94DF3 /* Assets.xcassets */; };
 		6C7CF25B1E85B07C00C94DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7CF2591E85B07C00C94DF3 /* LaunchScreen.storyboard */; };
 		6C7CF2661E85B07C00C94DF3 /* PROPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF2651E85B07C00C94DF3 /* PROPTests.swift */; };
-		6C7CF2711E85B45400C94DF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF2701E85B45400C94DF3 /* HomeViewController.swift */; };
+		6C7CF2711E85B45400C94DF3 /* ScanMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7CF2701E85B45400C94DF3 /* ScanMenu.swift */; };
 		D676BB75152CAB77F00B3437 /* Pods_PROP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A00793192A19410DACEC0CC /* Pods_PROP.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14D769201E8EE5E000E9786A /* ScanData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScanData.storyboard; sourceTree = "<group>"; };
+		14D769231E8EE65900E9786A /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		14D769251E8EEA6200E9786A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		299E190BF08E895A437EF943 /* Pods_PROPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PROPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A00793192A19410DACEC0CC /* Pods_PROP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PROP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D613871FD1EF072AA4D8728 /* Pods-PROP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROP.release.xcconfig"; path = "Pods/Target Support Files/Pods-PROP/Pods-PROP.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,7 +47,7 @@
 		6C7CF2611E85B07C00C94DF3 /* PROPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PROPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7CF2651E85B07C00C94DF3 /* PROPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PROPTests.swift; sourceTree = "<group>"; };
 		6C7CF2671E85B07C00C94DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C7CF2701E85B45400C94DF3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6C7CF2701E85B45400C94DF3 /* ScanMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanMenu.swift; sourceTree = "<group>"; };
 		D2B5501DA030B06E97794B24 /* Pods-PROPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PROPTests/Pods-PROPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F945FD9C426AC681707A646D /* Pods-PROP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PROP/Pods-PROP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14D769221E8EE5E700E9786A /* ScanData */ = {
+			isa = PBXGroup;
+			children = (
+				14D769201E8EE5E000E9786A /* ScanData.storyboard */,
+				6C7CF2701E85B45400C94DF3 /* ScanMenu.swift */,
+			);
+			name = ScanData;
+			sourceTree = "<group>";
+		};
 		24DEEDE1EDF0FF0EF9507C88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +113,13 @@
 		6C7CF24F1E85B07C00C94DF3 /* PROP */ = {
 			isa = PBXGroup;
 			children = (
-				6C7CF2501E85B07C00C94DF3 /* AppDelegate.swift */,
+				14D769221E8EE5E700E9786A /* ScanData */,
+				14D769231E8EE65900E9786A /* MenuVC.swift */,
 				6C7CF2541E85B07C00C94DF3 /* Main.storyboard */,
-				6C7CF2701E85B45400C94DF3 /* HomeViewController.swift */,
-				6C7CF2571E85B07C00C94DF3 /* Assets.xcassets */,
 				6C7CF2591E85B07C00C94DF3 /* LaunchScreen.storyboard */,
+				6C7CF2571E85B07C00C94DF3 /* Assets.xcassets */,
+				6C7CF2501E85B07C00C94DF3 /* AppDelegate.swift */,
+				14D769251E8EEA6200E9786A /* GoogleService-Info.plist */,
 				6C7CF25C1E85B07C00C94DF3 /* Info.plist */,
 			);
 			path = PROP;
@@ -184,7 +201,7 @@
 				TargetAttributes = {
 					6C7CF24C1E85B07C00C94DF3 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 656EK9W3KJ;
+						DevelopmentTeam = 67VCH4Z68W;
 						ProvisioningStyle = Automatic;
 					};
 					6C7CF2601E85B07C00C94DF3 = {
@@ -220,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C7CF25B1E85B07C00C94DF3 /* LaunchScreen.storyboard in Resources */,
+				14D769211E8EE5E000E9786A /* ScanData.storyboard in Resources */,
+				14D769261E8EEA6200E9786A /* GoogleService-Info.plist in Resources */,
 				6C7CF2581E85B07C00C94DF3 /* Assets.xcassets in Resources */,
 				6C7CF2561E85B07C00C94DF3 /* Main.storyboard in Resources */,
 			);
@@ -333,7 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C7CF2511E85B07C00C94DF3 /* AppDelegate.swift in Sources */,
-				6C7CF2711E85B45400C94DF3 /* HomeViewController.swift in Sources */,
+				6C7CF2711E85B45400C94DF3 /* ScanMenu.swift in Sources */,
+				14D769241E8EE65900E9786A /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +491,7 @@
 			baseConfigurationReference = F945FD9C426AC681707A646D /* Pods-PROP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 656EK9W3KJ;
+				DEVELOPMENT_TEAM = 67VCH4Z68W;
 				INFOPLIST_FILE = PROP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adicu.PROP;
@@ -485,7 +505,7 @@
 			baseConfigurationReference = 2D613871FD1EF072AA4D8728 /* Pods-PROP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 656EK9W3KJ;
+				DEVELOPMENT_TEAM = 67VCH4Z68W;
 				INFOPLIST_FILE = PROP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adicu.PROP;

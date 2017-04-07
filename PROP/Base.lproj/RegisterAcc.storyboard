@@ -42,11 +42,14 @@
                                 <rect key="frame" x="52.5" y="74" width="216" height="104"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDX-P5-kRt">
-                                <rect key="frame" x="131.5" y="468" width="57" height="30"/>
+                                <rect key="frame" x="131.5" y="508" width="57" height="30"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="createAccPressed:" destination="RKc-rN-jv1" eventType="touchUpInside" id="8ZD-Uc-rgF"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="U5l-mT-eKS">
-                                <rect key="frame" x="26" y="195" width="268" height="230"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="U5l-mT-eKS">
+                                <rect key="frame" x="26" y="195" width="268" height="270"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="17M-ca-fh6">
                                         <rect key="frame" x="0.0" y="0.0" width="268" height="42"/>
@@ -87,8 +90,8 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5Xe-3Z-9Dd">
-                                        <rect key="frame" x="0.0" y="47" width="268" height="183"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5Xe-3Z-9Dd">
+                                        <rect key="frame" x="0.0" y="57" width="268" height="213"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f5Q-MF-oc2">
                                                 <rect key="frame" x="0.0" y="0.0" width="268" height="42"/>
@@ -111,7 +114,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-Ee-EXa">
-                                                <rect key="frame" x="0.0" y="47" width="268" height="42"/>
+                                                <rect key="frame" x="0.0" y="57" width="268" height="42"/>
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Does Not Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDT-Rj-7iy">
                                                         <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
@@ -131,7 +134,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aLv-bi-1g5">
-                                                <rect key="frame" x="0.0" y="94" width="268" height="42"/>
+                                                <rect key="frame" x="0.0" y="114" width="268" height="42"/>
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Must be at least 6 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjc-HV-WYT">
                                                         <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
@@ -143,7 +146,7 @@
                                                         <rect key="frame" x="0.0" y="12" width="268" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -151,7 +154,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7hN-qw-Kec">
-                                                <rect key="frame" x="0.0" y="141" width="268" height="42"/>
+                                                <rect key="frame" x="0.0" y="171" width="268" height="42"/>
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Does Not Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6Q-oL-tM7">
                                                         <rect key="frame" x="0.0" y="0.0" width="268" height="12"/>
@@ -163,7 +166,7 @@
                                                         <rect key="frame" x="0.0" y="12" width="268" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -199,7 +202,7 @@
                     <navigationItem key="navigationItem" id="M09-EU-wfO">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="BOy-hB-x7u">
                             <connections>
-                                <segue destination="9DN-mc-TyH" kind="unwind" unwindAction="toMainWithSegue:" id="Ip2-5A-kdh"/>
+                                <segue destination="9DN-mc-TyH" kind="unwind" identifier="toMain" unwindAction="toMainWithSegue:" id="Ip2-5A-kdh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

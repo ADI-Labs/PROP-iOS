@@ -107,7 +107,7 @@ class RegisterVC: UIViewController {
             if let `user` = user {
                 
                 self.userProfileManager.update(for: user, firstName: firstName, lastName: lastName)
-                self.performSegue(withIdentifier: "dismissSegue", sender: nil)
+                self.performSegue(withIdentifier: "toMain", sender: nil)
             }
             else {
                 if let `error` = error {

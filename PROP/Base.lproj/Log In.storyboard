@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Toh-jF-Rqt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PWv-xF-8Iv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,22 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="lVn-Bs-coE">
-            <objects>
-                <navigationController id="Toh-jF-Rqt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u35-me-bAe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="lcy-op-mMc" kind="relationship" relationship="rootViewController" id="AsI-7W-xa8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B1R-HK-V5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="932" y="967"/>
-        </scene>
         <!--Log InVC-->
         <scene sceneID="V9s-tk-pyu">
             <objects>
@@ -57,12 +41,15 @@
                                 <rect key="frame" x="87.5" y="300" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYw-ia-8fI">
                                 <rect key="frame" x="166" y="387" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="signInAction:" destination="lcy-op-mMc" eventType="touchUpInside" id="peh-Rn-p9Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,7 +66,8 @@
                     <navigationItem key="navigationItem" id="mhT-Qj-bc8">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="sPU-sg-j8Y">
                             <connections>
-                                <segue destination="k09-ik-CjU" kind="unwind" unwindAction="toMainWithSegue:" id="YI5-dn-kTu"/>
+                                <action selector="backBtnPressed:" destination="lcy-op-mMc" id="Ahf-0M-EbJ"/>
+                                <segue destination="k09-ik-CjU" kind="unwind" unwindAction="unwindModalWithSegue:" id="STB-1M-2vX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -91,7 +79,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvt-db-erP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="k09-ik-CjU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="967"/>
+            <point key="canvasLocation" x="2700" y="966.56671664167925"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6b1-Bo-RQw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PWv-xF-8Iv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HFV-id-hef">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lcy-op-mMc" kind="relationship" relationship="rootViewController" id="xYs-vE-EPo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tad-B3-V56" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8" y="966.56671664167925"/>
         </scene>
     </scenes>
     <resources>

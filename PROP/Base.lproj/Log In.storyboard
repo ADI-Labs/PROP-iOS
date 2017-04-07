@@ -67,7 +67,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Back" id="sPU-sg-j8Y">
                             <connections>
                                 <action selector="backBtnPressed:" destination="lcy-op-mMc" id="Ahf-0M-EbJ"/>
-                                <segue destination="k09-ik-CjU" kind="unwind" unwindAction="unwindModalWithSegue:" id="STB-1M-2vX"/>
+                                <segue destination="k09-ik-CjU" kind="unwind" identifier="toMain" unwindAction="unwindtoMainWithSegue:" id="0ve-en-lcg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

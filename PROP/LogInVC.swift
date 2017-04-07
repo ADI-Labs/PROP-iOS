@@ -34,7 +34,7 @@ class LogInVC: UIViewController {
                 
                 if user != nil {
                     self.reset()
-                    self.performSegue(withIdentifier: "dismissSegue", sender: self)
+                    self.performSegue(withIdentifier: "toMain", sender: self)
                 } else {
                     //Error handling
                 }
@@ -45,11 +45,8 @@ class LogInVC: UIViewController {
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
     }
-    
-    @IBAction func backBtnPressed(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
-    }
+
+
     
     
 }

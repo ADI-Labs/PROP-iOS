@@ -13,7 +13,7 @@
         <!--MenuVC-->
         <scene sceneID="E1Y-l7-zeW">
             <objects>
-                <viewController id="EbR-5k-eNL" customClass="MenuVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" id="EbR-5k-eNL" customClass="MenuVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JCa-4K-Lts"/>
                         <viewControllerLayoutGuide type="bottom" id="H9n-zB-T0o"/>

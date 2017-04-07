@@ -45,5 +45,7 @@ class LogInVC: UIViewController {
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
     }
-
+    
+    
+    
 }

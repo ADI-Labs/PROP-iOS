@@ -29,7 +29,7 @@
         <!--RegisterVC-->
         <scene sceneID="c2d-P8-fQ5">
             <objects>
-                <viewController id="RKc-rN-jv1" customClass="RegisterVC" sceneMemberID="viewController">
+                <viewController id="RKc-rN-jv1" customClass="RegisterVC" customModule="PROP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XYO-UV-fAP"/>
                         <viewControllerLayoutGuide type="bottom" id="G93-Ny-0P8"/>
@@ -199,7 +199,7 @@
                     <navigationItem key="navigationItem" id="M09-EU-wfO">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="BOy-hB-x7u">
                             <connections>
-                                <segue destination="9DN-mc-TyH" kind="unwind" unwindAction="unwindModalWithSegue:" id="BQU-f9-fsB"/>
+                                <segue destination="9DN-mc-TyH" kind="unwind" unwindAction="toMainWithSegue:" id="Ip2-5A-kdh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

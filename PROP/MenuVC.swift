@@ -25,6 +25,10 @@ class MenuVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func toMain(segue: UIStoryboardSegue) {
+        print("Unwind segue made")
+    }
+
 
 
 }

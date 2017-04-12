@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140C95CE1E98306100F23337 /* MonTutMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140C95CD1E98306100F23337 /* MonTutMenu.storyboard */; };
+		140C95D01E98308B00F23337 /* MonTutMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C95CF1E98308B00F23337 /* MonTutMenuVC.swift */; };
+		14675F761E9DEB9C00D3C83B /* TutMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14675F751E9DEB9C00D3C83B /* TutMenu.storyboard */; };
 		14D769211E8EE5E000E9786A /* ScanData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D769201E8EE5E000E9786A /* ScanData.storyboard */; };
 		14D769241E8EE65900E9786A /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D769231E8EE65900E9786A /* MenuVC.swift */; };
 		14D769261E8EEA6200E9786A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D769251E8EEA6200E9786A /* GoogleService-Info.plist */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140C95CD1E98306100F23337 /* MonTutMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MonTutMenu.storyboard; sourceTree = "<group>"; };
+		140C95CF1E98308B00F23337 /* MonTutMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonTutMenuVC.swift; sourceTree = "<group>"; };
+		14675F751E9DEB9C00D3C83B /* TutMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TutMenu.storyboard; sourceTree = "<group>"; };
 		14D769201E8EE5E000E9786A /* ScanData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScanData.storyboard; sourceTree = "<group>"; };
 		14D769231E8EE65900E9786A /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		14D769251E8EEA6200E9786A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -83,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140C95CC1E98303500F23337 /* MonTutMenu */ = {
+			isa = PBXGroup;
+			children = (
+				140C95CF1E98308B00F23337 /* MonTutMenuVC.swift */,
+				140C95CD1E98306100F23337 /* MonTutMenu.storyboard */,
+			);
+			name = MonTutMenu;
+			sourceTree = "<group>";
+		};
+		14675F741E9DEB7500D3C83B /* Tutorial Menu */ = {
+			isa = PBXGroup;
+			children = (
+				14675F751E9DEB9C00D3C83B /* TutMenu.storyboard */,
+			);
+			name = "Tutorial Menu";
+			sourceTree = "<group>";
+		};
 		14D769221E8EE5E700E9786A /* ScanData */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +175,8 @@
 		6C7CF24F1E85B07C00C94DF3 /* PROP */ = {
 			isa = PBXGroup;
 			children = (
+				14675F741E9DEB7500D3C83B /* Tutorial Menu */,
+				140C95CC1E98303500F23337 /* MonTutMenu */,
 				14D7692C1E8EEC7600E9786A /* LogIn */,
 				14D769221E8EE5E700E9786A /* ScanData */,
 				14D769311E8EEF5C00E9786A /* RegisterVC */,
@@ -278,6 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14675F761E9DEB9C00D3C83B /* TutMenu.storyboard in Resources */,
+				140C95CE1E98306100F23337 /* MonTutMenu.storyboard in Resources */,
 				6C7CF25B1E85B07C00C94DF3 /* LaunchScreen.storyboard in Resources */,
 				14D769211E8EE5E000E9786A /* ScanData.storyboard in Resources */,
 				14D769301E8EEF4D00E9786A /* RegisterAcc.storyboard in Resources */,
@@ -395,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140C95D01E98308B00F23337 /* MonTutMenuVC.swift in Sources */,
 				6C7CF2511E85B07C00C94DF3 /* AppDelegate.swift in Sources */,
 				6C7CF2711E85B45400C94DF3 /* ScanMenu.swift in Sources */,
 				14D769281E8EEB9500E9786A /* LogInVC.swift in Sources */,

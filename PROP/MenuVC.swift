@@ -18,8 +18,9 @@ class MenuVC: UIViewController {
 
     @IBAction func unwindtoMain(segue : UIStoryboardSegue) {
         
-        print("HEY IT WORKED")
-        
+        if segue.identifier == "toMain" {
+            self.performSegue(withIdentifier: "toMonTut", sender: self)
+        }
     }
 
 
